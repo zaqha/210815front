@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+    body {
+      background:
+        /* linear-gradient(217deg, #fbefab,transparent 40%), */
+        linear-gradient( #febdb2, #e6d4d2,#ff9c9c);
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      
+    }
+
+    img {
+      text-align: center;
+      margin: -10px;
+      width: 40%;
+      height: auto;
+      filter: drop-shadow(3px 7px 8px rgba(0, 0, 0, 0.4))
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    h1 {
+      background-image: url(pink.jpg);
+      background-size: 500px 200px;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: lighter;
+      font-size: 60px;
+      font-family: 'Fjalla One', sans-serif;
+      filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.4));
+      opacity: 0.8;
+      margin: 0;
+    }
+
+    h2 {
+      text-align: center;
+      color: rgb(0, 0, 0, 0.6);
+      font-weight: lighter;
+      font-family: 'Petit Formal Script', cursive;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 1.2rem;
+      color: rgba(211, 0, 105, 0.8);
+      font-weight: bold;
+      /* background-color:  */
+      display: inline-block;
+      padding: 10px;
+
+    }
+
+    table {
+      margin-left: auto;
+      margin-right: auto;
+      color: azure;
+      
+    }
+
+    thead {
+      background: rgba(211, 0, 105, 0.8);
+    }
+
+    td {
+      border: 1px;
+      padding: 10px;
+      width: 200px;
+      height: 25px;
+      text-align: center;
+    }
+    tbody>tr:hover :not(:first-child){
+      color: rgb(255, 24, 166);
+      cursor: pointer;
+    }
+
+    td:first-child{
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+
+    td:last-child{
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    tr:nth-child(odd) {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    tr:nth-child(even) {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+
+    @media (max-width: 800px) {
+      img {
+        width: 80%;
+      }
+    }
+
+  @media (max-width: 800px) {
+  table{
+    width: 70%;
+
+  }
+  thead {
+    display: none;
+  
+  }
+  tr {
+    display: block;
+    margin: 3px;
+    border-radius: 15px;
+  }
+  td {
+    padding-left: 40%;
+    position: relative;
+    display: block;
+  }
+  td::before {
+    content: attr(data-head);
+    color: rgba(211, 0, 105, 0.7);
+    font-weight: bold;
+    position: absolute;
+    left: 5%;
+    width: 28%;
+  }
+}
+  </style>
+
+</head>
+
+<body>
+  <div class="picture">
+    <img src="dish.png" alt="替代文字" title="標題，當滑鼠移至圖片上時呈現" width="466"
+      height="373">
+  </div>
+  <br>
+  <div class="title">
+    <h1>LITTLE PRINCESS<br>BREAKFAST</h1>
+    <h2> A Start of A Good Day </h2>
+  </div>
+  <h3>MENU</h3>
+
+  <table style="width:70%">
+    <thead>
+      <tr class="first" >
+        <td style="width: 5%;" >Number</td>
+        <td style="width: 10%; ">Dish</td>
+        <td style="width: 10%; ">Price</td>
+        <td style="width: 10%;" >VIP price</td>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td data-head="Number" class="number">1</td>
+      <td data-head="Dish">Baby Back Ribs</td>
+      <td data-head="Price">35.39</td>
+      <td data-head="VIP price">35.39</td>
+    </tr>
+    <tr>
+      <td data-head="Number" class="number">2</td>
+      <td data-head="Dish">Parmesan-Herb Angus</td>
+      <td data-head="Price">25.79</td>
+      <td data-head="VIP price">25.79</td>
+    </tr>
+    <tr>
+      <td data-head="Number" class="number">3</td>
+      <td data-head="Dish">New Zealand Lamb</td>
+      <td data-head="Price">15.69</td>
+      <td data-head="VIP price">15.69</td>
+    </tr>
+    <tr>
+      <td data-head="Number" class="number">4</td>
+      <td data-head="Dish">Roasted Pork</td>
+      <td data-head="Price">25.9</td>
+      <td data-head="VIP price">25.9</td>
+    </tr>
+    <tr>
+      <td data-head="Number" class="number">5</td>
+      <td data-head="Dish">Porterhouse</td>
+      <td data-head="Price">35.99</td>
+      <td data-head="VIP price">35.99</td>
+    </tr>
+    <tr>
+      <td data-head="Number" class="number">6</td>
+      <td data-head="Dish">Tenderloin</td>
+      <td data-head="Price">25.99</td>
+      <td data-head="VIP price">25.99</td>
+    </tr>
+    <tr>
+      <td data-head="Number" class="number">7</td>
+      <td data-head="Dish">Wagyu Beef</td>
+      <td data-head="Price">20.99</td>
+      <td data-head="VIP price">20.99</td>
+    </tr>
+    <tr>
+      <td data-head="Number" class="number">8</td>
+      <td data-head="Dish">Bone-in Ribeye</td>
+      <td data-head="Price">35.99</td>
+      <td data-head="VIP price">35.99</td>
+    </tr>
+  </tbody>
+  </table>
+
+</body>
+
+</html>

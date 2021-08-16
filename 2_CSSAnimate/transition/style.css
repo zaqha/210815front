@@ -1,0 +1,96 @@
+
+.main{
+  position: relative;
+  overflow: hidden;
+}
+.bottle:hover{
+  transform: scale(0.9);
+}
+
+.top{
+  background-color: rgb(37, 37, 37);
+}
+
+/* bumber1 */
+.bg1 {
+  width: auto;
+  height: 100vh;
+  z-index : -1;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+.bottle{
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+}
+
+.parent{
+  width: 110%;
+  height: 100vh;
+  background: linear-gradient(to top, rgb(0, 0, 0), rgba(255, 255, 255, 0));
+}
+
+.p1{
+  position: absolute;
+  top: 75vh;
+  display: none;
+  color: red;
+  opacity: .6;
+}
+
+/* bumber2 */
+.bg2 {
+  width: auto;
+  height: 100vh;
+  z-index : -1;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.p2{
+  position: absolute;
+  top: 75vh;
+  display: none;
+  color: rgb(0, 0, 255);
+  opacity: .6;
+}
+
+/* bumber3 */
+.bg3 {
+  width: auto;
+  height: 100vh;
+  z-index : -1;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.p3{
+  position: absolute;
+  top: 75vh;
+  display: none;
+  color: orange;
+  opacity: .6;
+}
+
+
+/* bumber4 */
+.bg4 {
+  width: auto;
+  height: 100vh;
+  z-index : -1;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.p4{
+  position: absolute;
+  top: 75vh;
+  display: none;
+  color: purple;
+  opacity: .8;
+}

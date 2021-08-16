@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+<body style="background-color: black;">
+  
+<header class="top container-fluid d-flex justify-content-center"><img src="./img/logo.png" width="60px" height="40px" alt=""></header>
+<section class="container justify-content-center">
+  <div class="row">
+    <div class=" col-6 col-lg-3 main">
+      <div class="parent"><img src="./img/01.jpg" alt="" class="bg1"></div>
+      <img class=" bottle1 bottle col-12" src="./img/red.png" alt="" width="90%">
+      <p class="text-center fs-2 col-12 p1">Crimpson</p>
+    </div>
+
+
+    <div class=" col-6 col-lg-3 main">
+      <div class="parent"><img src="./img/02.jpg" alt="" class="bg2"></div>
+      <img class=" bottle2 bottle col-12" src="./img/blue.png" alt="" width="90%">
+      <p class="text-center fs-2 col-12 p2">Overfraft</p>
+    </div>
+
+    <div class=" col-6 col-lg-3 main">
+      <div class="parent"><img src="./img/03.jpg" alt="" class="bg3"></div>
+      <img class=" bottle3 bottle col-12" src="./img/orange.png" alt="" width="90%">
+      <p class="text-center fs-2 col-12 p3">Bare</p>
+    </div>
+
+    <div class=" col-6 col-lg-3 main">
+      <div class="parent"><img src="./img/04.jpg" alt="" class="bg4"></div>
+      <img class=" bottle4 bottle col-12" src="./img/purple.png" alt="" width="90%">
+      <p class="text-center fs-2 col-12 p4">Beauregard</p>
+    </div>
+
+
+  </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function(){
+    $('.bottle1').hover(function(){
+      $('.bg1').toggle();
+      $('.p1'). toggle();
+    })
+
+    $('.bottle2').hover(function(){
+      $('.bg2').toggle();
+      $('.p2'). fadeToggle();
+    })
+
+    $('.bottle3').hover(function(){
+      $('.bg3').toggle();
+      $('.p3'). toggle();
+    })
+
+    $('.bottle4').hover(function(){
+      $('.bg4').toggle();
+      $('.p4'). toggle();
+    })
+  })
+</script>
+
+</body>
+</html>

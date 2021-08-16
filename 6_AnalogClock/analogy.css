@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  background: rgb(39, 72, 52);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.circle {
+  width: 300px;
+  height: 300px;
+  background: url(img/main.png);
+  background-size: cover;
+  position: relative;
+  margin: 10px;
+  flex: 0 0 auto;
+}
+
+
+.jhur {
+  width: 30px;
+  height: 30%;
+  background: url(img/1.png);
+  background-size: 30px 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  margin-left: -15px;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.6))
+}
+
+.jmin{
+  width: 20px;
+  height: 40%;
+  background: url(img/2.png);
+  background-size: 20px 100%;
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  margin-left: -10px;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.6))
+}
+
+.jsec {
+  width: 10px;
+  height: 50%;
+  background: url(img/3.png);
+  background-size: 10px 100%;
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  margin-left: -5px;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.6))
+
+}
+
+
+.omin {
+  transform-origin: 50% calc(100% / 0.8 - 45px);
+}
+
+.ohur {
+  transform-origin: 50% calc(100% / 0.6 - 75px);
+}
+
+.osec {
+  transform-origin: 50% calc(100% - 15px);
+}
